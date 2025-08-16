@@ -15,7 +15,7 @@ let matchedPairs = 0;
 let lockBoard = false; // Prevents clicking more than 2 cards at a time
 // --- Game Logic Functions ---
 /**
- * Shuffles an array in place using the Fisher-Yates algorithm.
+ * Shuffles an array
  * @param array The array to shuffle.
  */
 function shuffle(array) {
