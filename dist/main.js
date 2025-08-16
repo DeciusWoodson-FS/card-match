@@ -37,15 +37,14 @@ function createBoard() {
         card.classList.add("card");
         card.dataset.value = value;
         card.innerHTML = `
-            <div class="card-inner">
-                <div class="card-face card-front">${value}</div>
-                <div class="card-face card-back"></div>
-            </div>
-        `;
+        <div class="card-inner">
+          <div class="card-face card-front">${value}</div>
+          <div class="card-face card-back"></div>
+        </div>
+      `;
         card.addEventListener("click", handleCardClick);
         gameBoard.appendChild(card);
     });
-    setTimeout(() => gameBoard.classList.remove("initializing"), 100);
 }
 /**
  * Handles the logic when a card is clicked.
